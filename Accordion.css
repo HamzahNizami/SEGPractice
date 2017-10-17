@@ -1,0 +1,32 @@
+/* css */
+
+button.accordion {
+    background-color: antiquewhite;
+    width: 100% ;
+    border: none;
+    text-align: left;
+    font-size: 1.2em;
+    transition: 0.4s;
+    cursor: pointer;
+    outline: none;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: beige;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+button.accordion:after {
+    content: '\002B';
+    float: right;
+}
+
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+}
