@@ -3,39 +3,65 @@
 
   <head>
     <title> Module Selection</title>
-      <style> 
-          html {
-              background-color: red;
-              margin: 0;
-              padding: 0;
+      <style>
+
+
+          function fun1(n) {
+
+          document.getElementById(n).style.backgroundColor = '#383838';
+
           }
-          body {
-              background-color: white;
-              width: 70%;
-              margin: 0 auto;
+
+          function fun2(n) {
+
+          document.getElementById(n).style.backgroundColor = 'lightgray';
+
           }
-          
+
       </style>
       <link rel="stylesheet" href="Accordion.css" type="text/css">
   </head>
 
+
+
   <body>
-      <main>
-        
-      <h1> <img src="images/index.png"> </h1>
-          <nav>
-            <ul>
-               <li> <a href= "CompSci.html" title = "Modules for Computer Science">Computer Science</a> </li>
-                <li> <a href= "CompSciM.html" title = "Modules for Computer Science with Management">Computer Science with Management</a></li>
-                <li> <a href= "Module.html" title = "Chosen Modules"> Modules</a></li>
-            </ul>
-          </nav>
-          
-          
-              
-              
-              <h2> Core </h2> 
-          
+
+
+
+      <div id="container">
+
+      <center>
+
+      <div id="logobar"><img src="images/index.png" width=250 height=150></div>
+
+       <div id="title">
+
+
+<nav>
+      <ul>
+        		        <li id = 'link1' onmouseover = "fun1('link1')" onmouseout = "fun2('link1')"><a href="CompSci.html" class = 'active'>Computer Science</a></li>
+        		        <li id = 'link2' onmouseover = "fun1('link2')" onmouseout = "fun2('link2')"><a href="CompSciM.html">Comp Sci With Management</a></li>
+      		        <li id = 'link3' onmouseover = "fun1('link3')" onmouseout = "fun2('link3')"><a href="Module.html" >Modules</a></li>
+
+
+      		    </ul>
+            </nav>
+
+              </div>
+
+              <div id="content">
+
+              <h1 style= "font-size: 35px;"><u>
+                                  Welcome to CompSci module info.
+                                                  </u></h1>
+
+
+              <h2>
+              The most efficient and accurate website ever, for finding out Comp Sci module info for studying at King's College London.</font></h2>
+
+
+              <h2> Core </h2>
+
              <button class="accordion"> 6CCS3PRJ - Individual Project </button>
               <div class="panel">
               <dl>
@@ -46,19 +72,19 @@
                 <dd>  Formative assessment: four project reports and one project background and specification report </dd>
               </dl>
               </div>
-              
-              
+
+
               <h2> Compulsory </h2>
               <dl>
-                  <dt><strong> No Compulsory Module </strong>  </dt>
+                  <dt style= "color: purple"><strong> No Compulsory Module </strong>  </dt>
               </dl>
-              
-             
+
+
               <h2> Optional </h2>
-              
-                 
-              <h3> Semester 1 </h3> 
-          
+
+
+              <h3> Semester 1 </h3>
+
           <button class="accordion"> 6CCS3AMS - Agents and Multi-Agent Systems </button>
               <div class="panel">
                   <dl>
@@ -69,7 +95,7 @@
                         2 hour practical lab session (will not run every week) </dd>
                   </dl>
                 </div>
-                  
+
           <button class="accordion"> 6CCS3CFL Compiler and Formal Languages </button>
               <div class="panel">
                   <dl>
@@ -79,7 +105,7 @@
                     <dd>  Teaching arrangements: weekly 3-hour lecture (of which 1 hour may be a tutorial) </dd>
                   </dl>
               </div>
-            
+
             <button class="accordion"> 6CCS3COV Computer Vision </button>
               <div class="panel">
                   <dl>
@@ -89,7 +115,7 @@
                     <dd>  Teaching arrangements: weekly 2-hour lecture, 1-hour tutorial and 1-hour practical lab session) </dd>
                   </dl>
                   </div>
-                  
+
             <button class="accordion"> 6CCS3CSL Computer Science Logic  </button>
               <div class="panel">
                   <dl>
@@ -99,7 +125,7 @@
                     <dd>  Teaching arrangements: weekly 2-hour lecture and 1 hour-tutorial </dd>
                   </dl>
                   </div>
-                 
+
              <button class="accordion"> 6CCS3HCI Human-Computer Interaction  </button>
               <div class="panel">
                   <dl>
@@ -109,9 +135,9 @@
                     <dd>  Teaching arrangements: 2-hour lecture (weekly); 1-hour tutorial (weekly); 2-hour practical (for three weeks only) </dd>
                   </dl>
                   </div>
-                  
+
               <button class="accordion"> 6CCS3VER Formal Verification </button>
-              <div class="panel">    
+              <div class="panel">
                   <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Dr Hana Chockler, Professor Luca Vigano and Dr Daniele Magazzeni    </dd>
@@ -119,9 +145,9 @@
                     <dd>  Teaching arrangements: weekly 2-hour lecture and 1-hour large-group tutorial; plus 2-hour practical that occurs three times over the semester </dd>
                   </dl>
                   </div>
-                  
+
               <button class="accordion"> 6CCS3WSN Algorithms for the World Wide Web and Social Networks </button>
-              <div class="panel">  
+              <div class="panel">
                   <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Professor Colin Cooper     </dd>
@@ -129,9 +155,9 @@
                     <dd>  Teaching arrangements: 3 hours (of which 1 hour may be a large-group tutorial) </dd>
                   </dl>
                   </div>
-                  
+
               <button class="accordion"> 6CCS3GRS Computer Graphics Systems </button>
-              <div class="panel">    
+              <div class="panel">
                   <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Dr Richard Overill    </dd>
@@ -139,9 +165,9 @@
                     <dd>  Teaching arrangements: weekly 3-hour lecture and 1-hour large-group tutorial </dd>
                   </dl>
                   </div>
-                  
+
                <button class="accordion"> 6CCS3PAL Parallel Algorithms </button>
-                <div class="panel">     
+                <div class="panel">
                     <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Professor Colin Cooper    </dd>
@@ -149,9 +175,9 @@
                     <dd>  Teaching arrangements: weekly 3-hour lecture</dd>
                     </dl>
                     </div>
-                    
+
                 <button class="accordion"> 6CCS3SMT Software Measurement and Testing</button>
-                <div class="panel">     
+                <div class="panel">
                     <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Dr Hanna Chockler and Dr Jose Such    </dd>
@@ -159,9 +185,9 @@
                     <dd>  Teaching arrangements: weekly 2-hour lecture and 1-hour large-group tutorial </dd>
                   </dl>
                     </div>
-                    
+
                 <button class="accordion"> 6CCS3AIN Artificial Intelligence </button>
-                <div class="panel">     
+                <div class="panel">
                     <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Professor Simon Parsons and Dr Elizabeth Black    </dd>
@@ -169,9 +195,9 @@
                     <dd>  Teaching arrangements: weekly 2-hour lecture and 1-hour large-group tutorial </dd>
                     </dl>
                     </div>
-                  
+
                 <button class="accordion"> 6CCS3CIS Cryptography and Information Security </button>
-                <div class="panel">     
+                <div class="panel">
                     <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Professor Luca Vigano    </dd>
@@ -179,118 +205,125 @@
                     <dd>  Teaching arrangements: weekly 3-hour lecture and 1-hour large-group tutorial </dd>
                     </dl>
                     </div>
-                    
+
                    <button class="accordion"> 6CCS3AIP Artificial Intelligence Planning  </button>
-                <div class="panel">     
-                    <dl> 
+                <div class="panel">
+                    <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Dr Amanda Coles and Dr Daniele Magazzeni    </dd>
                     <dd>  Assessment: 75% examination | 25% coursework  ( </dd>
                     <dd>  Teaching arrangements: weekly 3-hour lecture and 2-hour practical </dd>
                     </dl>
                     </div>
-                  
-              
-                 
-            
-              <h3> Semester 2 </h3> 
-                     
+
+
+
+
+              <h3> Semester 2 </h3>
+
                 <button class="accordion"> 6CCS3DSM Distributed Systems  </button>
-                <div class="panel">     
-                    <dl> 
+                <div class="panel">
+                    <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Dr Simon Miles   </dd>
                     <dd>  Assessment: 100% written examination </dd>
                     <dd>  Teaching pattern: weekly 3-hour lecture </dd>
                     </dl>
                     </div>
-                    
+
                 <button class="accordion"> 6CCS3COM Computational Models  </button>
-                <div class="panel">     
-                    <dl> 
+                <div class="panel">
+                    <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Professor Maribel Fernandez   </dd>
                     <dd>  Assessment: 100% written examination, 2 hours </dd>
                     <dd>  Teaching arrangements: weekly 2-hour lecture and 1-hour tutorial </dd>
                     </dl>
                     </div>
-                    
+
                 <button class="accordion">  6CCS3SAD Software Architecture and Design  </button>
-                <div class="panel">     
-                    <dl> 
+                <div class="panel">
+                    <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer:  Dr Hamza Hamza   </dd>
                     <dd>  Assessment: 100% written examination, 3 hours </dd>
                     <dd>  Teaching arrangements: weekly 3-hour lecture </dd>
                     </dl>
                     </div>
-                        
+
                 <button class="accordion"> 6CCS3SIA Software Engineering of Internet Applications  </button>
-                <div class="panel">     
-                    <dl> 
+                <div class="panel">
+                    <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Professor Stefan Edelkamp   </dd>
                     <dd>  Assessment: 100% written examination, 2 hours </dd>
                     <dd>  Teaching arrangements: weekly 2-hour lecture and fortnightly 1-hour tutorial, fortnightly 1-hour lab. </dd>
                     </dl>
                     </div>
-                    
+
                 <button class="accordion"> 6CCS3NSE Network Security  </button>
-                <div class="panel">     
-                    <dl> 
+                <div class="panel">
+                    <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Professor Luca Vigano and Dr Jose Such   </dd>
                     <dd>  Assessment:  100% written examination, 2 hours </dd>
                     <dd>  Teaching arrangements: 2-hour lecture (weekly); 1-hour tutorial (weekly) </dd>
                     </dl>
                     </div>
-                    
+
                 <button class="accordion"> 6CCS3OME Optimisation Methods  </button>
-                <div class="panel">     
-                    <dl> 
+                <div class="panel">
+                    <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Dr Kathleen Steinhoefel    </dd>
                     <dd>  Assessment: 100% examination </dd>
                     <dd>  Teaching arrangements: weekly 2-hour lecture and 1-hour large-group tutorial </dd>
                     </dl>
                     </div>
-                    
+
                 <button class="accordion"> 6CCS3PRE Pattern Recognition </button>
-                <div class="panel">     
-                    <dl> 
+                <div class="panel">
+                    <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer: Dr Michael Spratling, Dr Hak-Keung Lam     </dd>
                     <dd>  Assessment:  65% written examination, 3 hours | 35% coursework </dd>
                     <dd>  Teaching arrangements: 3 hours (of which 1 hour may be a large-group tutorial) </dd>
                     </dl>
                     </div>
-                    
+
                 <button class="accordion"> 6CCS3TSP Text Searching and Processing  </button>
-                <div class="panel">     
-                    <dl> 
+                <div class="panel">
+                    <dl>
                     <dd> Credit value: 15 </dd>
                     <dd>   Lecturer:  Professor Costas Iliopoulos and Dr Solon Pissis    </dd>
                     <dd>  Assessment: 100% examination </dd>
                     <dd>  Teaching arrangements: weekly 3-hour lecture </dd>
                     </dl>
                     </div>
-      </main>
+
 <script type="text/javascript">
 var acc = document.getElementsByClassName("accordion");
 var i;
-    
+
 for (i = 0; i < acc.length; i++){
     acc[i].onclick = function(){
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
         if(panel.style.maxHeight){
-            panel.style.maxHeight = null;   
+            panel.style.maxHeight = null;
         } else{
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
     }
-}    
+}
 </script>
-  </body>
 
+</div>
+<div id="footer" style="color:white;">
+
+Home | FAQ | Privacy Policy |Disclaimer
+<br>Maiwand and the lads © 2017 All rights reserved  </div>
+
+</div>
+</body>
 </html>

@@ -1,5 +1,17 @@
 /* css */
 
+
+/*html {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+}*/
+
 button.accordion {
     background-color: antiquewhite;
     width: 100% ;
@@ -29,4 +41,82 @@ div.panel {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: white;
+
+}
+
+
+body {
+    background-image: url("https://wallpaperscraft.com/image/london_big_ben_night_river_building_top_view_black_white_30804_1920x1080.jpg");
+    background-size: 100% 100%;
+    background-attachment:fixed;}
+
+#container{width: 800px; height:1200px;margin: 0 auto;}
+#logobar {Width:800px; height:150px; background:#280000;}
+#title{Width:800px; height:45px; background:white;}
+#content {width:800px; height:1100px;background: white;
+background-image:url("https://i.stack.imgur.com/p9mUO.jpg");
+background-repeat: repeat;  float:left;}
+#footer   {width:800px;  height:50px;  background: #101010 ;float:left; color: white; font-family: 'Roboto', sans-serif;}
+
+
+div.transbox {
+    margin: 30px;
+    background-color: black;
+    border: 1px ;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+
+h1 {color: white; font-family: 'Roboto', sans-serif;}
+h2{font-family: 'Roboto', sans-serif; color: white;}
+h3{font-family: 'Roboto', sans-serif; color: white;}
+
+
+
+
+
+ul {
+    list-style-type: none;
+     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+    font-size:1em;
+
+}
+
+
+
+
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 14px 60px;
+    text-decoration: none;
+	transition: all 0.2s linear;
+}
+
+li a:hover, li a:focus {
+ color: red;
+}
+
+.active{
+		background-color:black
+color:red;
 }
